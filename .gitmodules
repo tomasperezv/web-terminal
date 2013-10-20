@@ -4,3 +4,6 @@
 [submodule "src/js/js-simple-loader"]
 	path = src/js/js-simple-loader
 	url = git@github.com:tomasperezv/js-simple-loader.git
+[submodule "src/js/event-emitter"]
+	path = src/js/event-emitter
+	url = git@github.com:tomasperezv/event-emitter.git
