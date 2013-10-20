@@ -83,7 +83,7 @@ var WebTerminal = (function(EventEmitter) {
       this._addLine();
 
     }
-  }
+  };
 
   /**
    * @method init
@@ -97,6 +97,18 @@ var WebTerminal = (function(EventEmitter) {
       self._render();
     });
 
+    this._cursor = new Cursor();
+    this._cursor.listen();
+    this._cursor.attach(Cursor.CONTENT_CHANGE, self.updateContent.bind(this));
+
+  };
+
+  /**
+   * @method _updateContent
+   * @public
+   */
+  WebTerminal.prototype.updateContent = function(data) {
+    this.container.querySelector('.terminal-content').innerHTML = data;
   };
 
   return WebTerminal;
