@@ -1,0 +1,24 @@
+body, html {
+  height: 100%;
+}
+
+.terminal {
+  width: 100%;
+  min-height: 100%;
+  border: #000 solid 5px;
+  font-family: 'DejaVu Sans Mono', 'Everson Mono', FreeMono, Menlo, Terminal, monospace;
+  display: block;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  white-space: pre;
+  outline: none !important;
+  color: rgb(240, 240, 240);
+  background-color: rgb(16, 16, 16);
+  -webkit-font-smoothing: antialiased;
+  -webkit-user-select: none;
+}
+
+.terminal-cursor {
+  color: #000;
+  background: #f0f0f0;
+}

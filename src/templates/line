@@ -1,0 +1,5 @@
+<div class="terminal-line">
+	<span class="terminal-context">{{context}}</span>
+	<span class="terminal-cursor">$</span>
+	<div class="terminal-content"></div>
+</div>

@@ -1,0 +1,6 @@
+[submodule "src/js/mustache"]
+	path = src/js/mustache
+	url = https://github.com/janl/mustache.js.git
+[submodule "src/js/js-simple-loader"]
+	path = src/js/js-simple-loader
+	url = git@github.com:tomasperezv/js-simple-loader.git

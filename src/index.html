@@ -1,9 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script type="text/javascript" src="./js/web-terminal.js"></script>
+    <script type="text/javascript" src="./js/mustache/mustache.js"></script>
+    <script type="text/javascript" src="./js/js-simple-loader/loader.js"></script>
     <link type="text/css" rel="stylesheet" media="all" href="./css/web-terminal.css" />
-    <script type="test/javascript" src="./js/web-terminal.js"></script>
+    <link type="text/css" rel="stylesheet" media="all" href="./css/reset.css" />
   </head>
   <body>
+  <div id="terminal"></div>
   </body>
+
+  <script type="text/javascript">
+
+    var terminal = new WebTerminal({
+      containerSelector: '#terminal'
+    }).init();
+
+  </script>
+
 </html>
