@@ -8,9 +8,7 @@ body, html {
   border: #000 solid 5px;
   font-family: 'DejaVu Sans Mono', 'Everson Mono', FreeMono, Menlo, Terminal, monospace;
   display: block;
-  overflow-y: scroll;
   overflow-x: hidden;
-  white-space: pre;
   outline: none !important;
   color: rgb(240, 240, 240);
   background-color: rgb(16, 16, 16);
@@ -18,7 +16,35 @@ body, html {
   -webkit-user-select: none;
 }
 
+.terminal-line {
+  height: 20px;
+}
+
+.terminal-line div {
+  padding-top: 5px;
+  float: left;
+}
+
+.terminal-context {
+  width: 10px;
+}
+
 .terminal-cursor {
+  padding-top: 0;
+  margin-left: 2px;
+  width: 12px;
+  height: 20px;
   color: #000;
-  background: #f0f0f0;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: cursor;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes cursor {
+  from {
+    background: #f0f0f0;
+  }
+  to {
+    background: auto;
+  }
 }
